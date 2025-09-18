@@ -1,7 +1,7 @@
 import React from 'react';
 import './variables.css'; // Importa las variables CSS
 import Navbar from './components/Navbar';
-import Hero from './components/hero';
+import Hero from './components/Hero';
 import MaterialsSection from './components/MaterialsSection';
 import ProductsSection from './components/ProductsSection';
 import ServicesSection from './components/ServicesSection';
