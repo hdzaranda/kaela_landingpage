@@ -1,0 +1,96 @@
+/* En tu archivo AboutSection.css */
+
+.about-section {
+  padding: 4rem 2rem;
+  background-color: var(--color-light-pink); /* O el color que prefieras */
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-text-dark);
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-dark);
+}
+
+/* En tu archivo AboutSection.css */
+
+.about-section {
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white; /* Color del texto para que contraste con el fondo oscuro */
+  
+  /* Animación del fondo con degradado */
+  background: linear-gradient(135deg, var(--color-primary-pink), var(--color-light-pink), var(--color-dark-purple), var(--color-primary-pink));
+  background-size: 400% 400%; /* El tamaño del degradado debe ser más grande que el contenedor */
+  animation: backgroundAnimation 15s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.about-card {
+  background-color: rgba(255, 255, 255, 0.15); /* Fondo semitransparente para las tarjetas */
+  backdrop-filter: blur(10px); /* Efecto de cristal esmerilado */
+  border-radius: 15px;
+  padding: 2rem;
+  flex: 1 1 300px; /* Permite que las tarjetas se adapten */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about-cards {
+    flex-direction: column;
+  }
+}

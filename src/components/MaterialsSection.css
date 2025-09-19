@@ -1,7 +1,7 @@
 .materials-section {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #f7f7f7;
+  background-color:var(--color-light-pink);
 }
 
 .section-title {

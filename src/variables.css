@@ -4,5 +4,11 @@
   --color-light-pink: #f5c6d3;
   --color-text-dark: #333;
   --color-text-light: #fff;
-  
+  --color-menu: #fac0fa;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 }

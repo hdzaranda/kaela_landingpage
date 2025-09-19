@@ -24,12 +24,46 @@
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+/* En tu archivo Hero.css */
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Espacio entre los botones */
+  margin-top: 2rem;
+}
 
 .cta-button {
-  background-color: var(--color-primary-pink); /* Color rosa del logo */
-  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Espacio entre el ícono y el texto */
   padding: 1rem 2rem;
-  text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50px; /* Bordes redondeados */
+  font-size: 1.1rem;
   font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  color: white;
+}
+
+.cta-button:hover {
+  transform: translateY(-5px); /* Efecto de "levantar" al pasar el cursor */
+}
+
+/* Estilos específicos para el botón de WhatsApp */
+.cta-button.whatsapp {
+  background-color: #25d366; /* Color de WhatsApp */
+}
+
+/* Estilos específicos para el botón de Instagram */
+.cta-button.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); /* Colores de Instagram */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+  .cta-buttons {
+    flex-direction: column; /* Apila los botones en columnas en móvil */
+    align-items: center;
+  }
 }
